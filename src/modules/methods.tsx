@@ -6,16 +6,20 @@ const Methods: React.FC = () => {
     <G3TextModule header={"Metoder"} skin={"green"}>
       <>
         <p>
-          Vi har fått data fra terratec hvor de har fotografert vegbanen i Agder
-          før den er blitt prosessert og satt samme til bilder med geografisk
-          posisjon som referanse for enhver piksel i bildet.
+          Terratec har samlet inn data fra fylkesveien i agder. Denne dataen har
+          de prosessert og laget raster av. Rasteret inneholder detaljerte
+          gråtone-bilder og detaljert poisionsdata for hver eneste piksel i
+          bildet. Vi har brukt OpenCV for å detektere elementer et
+          fotgjengerfelt består av og tunet algoritmer til å gjenkjenne mønstre
+          med gjentakende elementer som bygger et samlet fotgjengerfelt. Når et
+          felt er oppdaget har vi beregnet en nøyaktig posisjon på sentert av
+          dette, som kan sendes til NVDB.
         </p>
         <p>
-          Dette har vi brukt til å søke etter fotgjengerfelt med et verktøy som
-          heter OpenCV og deretter lest ut hvor fotgjengerfeltet er lokalisert
-          på bildet for å kunne vise til posisjonen svært nøyaktiv. Posisjonen
-          er deretter klar for å lastes opp i NVDB slik at vi kan logge hvor
-          fotgjengerfelt befinner seg.
+          <em>
+            OpenCV er et bildeverktøy som muliggjør computer vision med Python
+            og C++.
+          </em>
         </p>
       </>
     </G3TextModule>

@@ -11,6 +11,10 @@
     padding: .5em 1em .5em 1em;
 
     width: fit-content;
+
+    color: white;
+
+    text-transform: uppercase;
 }
 
 .content {

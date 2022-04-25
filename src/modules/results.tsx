@@ -6,7 +6,7 @@ import Image from "../components/Image";
 
 const Results: React.FC = () => {
   return (
-    <G3TextModule header={"Results"} skin={"green"}>
+    <G3TextModule header={"Results"} skin={"blue"}>
       <>
         <Paragraph>Her kan vi skrive paragrapher</Paragraph>
         <Header>Hvis vi trenger en overskrift</Header>

@@ -7,12 +7,14 @@
 }
 
 .title {
-    color: white;
+    color: #363735;
     margin-bottom: .1em;
+    font-size: 56px;
+    text-shadow: 3px 3px white;
 }
 
 .index {
-    color: white;
+    color: #363735;
     margin-top: .1em;
     font-size: 1em;
 }

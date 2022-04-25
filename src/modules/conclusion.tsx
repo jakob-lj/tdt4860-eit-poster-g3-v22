@@ -6,7 +6,7 @@ import Paragraph from "../components/Paragrah";
 
 const Conclusion: React.FC = () => {
   return (
-    <G3TextModule header={"Konklusjon"} skin={"green"}>
+    <G3TextModule header={"Konklusjon"} skin={"orange"}>
       <>
         <Paragraph>Her kan vi skrive paragrapher</Paragraph>
         <Header>Hvis vi trenger en overskrift</Header>

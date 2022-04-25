@@ -1,5 +1,5 @@
 import React from "react";
-import TitleModule from "../../modules/introduction";
+import Introduction from "../../modules/introduction";
 import G3Link from "../G3Link";
 
 import styles from "./index.module.css";
@@ -15,7 +15,7 @@ const Title: React.FC = () => {
         <h4 className={styles.index}>
           Et prosjekt av Styrk, Kenneth, Vegard, Astrid og Jakob
         </h4>
-        <TitleModule />
+        <Introduction />
       </div>
 
       <div className={styles.img}>
@@ -25,12 +25,12 @@ const Title: React.FC = () => {
           }
           alt={""}
         />
-        <p style={{ color: "white" }}>
+        <p style={{ color: "#363735" }}>
           <em>
             Bilde lånt fra wikipedia (
             <G3Link
               to={"https://no.wikipedia.org/wiki/Fotgjengerovergang"}
-              color={"white"}
+              color={"#363735"}
             />
             )
           </em>

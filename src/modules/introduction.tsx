@@ -6,14 +6,14 @@ import Paragraph from "../components/Paragrah";
 
 const TitleModule: React.FC = () => {
   return (
-    <G3TextModule header={"Introduksjon"} skin={"yellow"}>
+    <G3TextModule header={"Introduksjon"} skin={"purple"}>
       <>
         <Paragraph>Her skriver vi introduksjonen</Paragraph>
         <Header>Her er en underoverskrift</Header>
         <Paragraph>Nok en paragraph og et bilde under</Paragraph>
         <Image
           link={
-            "https://g.acdn.no/obscura/API/dynamic/r1/ece5/tr_1000_2000_s_f/0000/hade/2016/3/1/10/01NYHHeisekran_05-06-DSC_0026.jpg?chk=851523"
+            "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e464752284120.5eea3640d666d.png"
           }
         />
       </>

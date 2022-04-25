@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  color: "white" | null;
+  color: "white" | "#363735" | null;
   to: string;
 };
 
