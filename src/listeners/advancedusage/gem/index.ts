@@ -19,6 +19,10 @@ const keylistener = (e: KeyboardEvent) => {
     alert("MASKIN!");
   });
 
+  lastWordIs("kenneth", () => {
+    alert("Romerikets store sønn");
+  });
+
   lastWordIs("vegard", () => {
     alert("FÅ PÅ DET KAMERAET!");
   });
