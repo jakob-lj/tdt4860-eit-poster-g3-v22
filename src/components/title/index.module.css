@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+}
+
+.container {
+    width: 60%;
+}
+
+.title {
+    color: white;
+    margin-bottom: .1em;
+}
+
+.index {
+    color: white;
+    margin-top: .1em;
+    font-size: 1em;
+}
+
+.img {
+    width: 40%;
+    text-align: center;
+}
+
+.img img {
+    width: 60%;
+    margin: auto;
+}

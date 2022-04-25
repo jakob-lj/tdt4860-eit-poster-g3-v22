@@ -1,0 +1,30 @@
+.container {
+    color: black;
+}
+
+.header {
+    position: relative;
+
+    z-index: 5;
+    left: 1em;
+
+    padding: .5em 1em .5em 1em;
+
+    width: fit-content;
+}
+
+.content {
+
+    position: relative;
+    top: -2em;
+    padding: 1em;
+
+    background-color: red;
+
+    border: 5px solid;
+
+    z-index: 3;
+
+    box-shadow: 5px 5px 0px #00000021;
+
+}
