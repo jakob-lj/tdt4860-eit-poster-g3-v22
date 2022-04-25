@@ -19,6 +19,11 @@ const keylistener = (e: KeyboardEvent) => {
     alert("MASKIN!");
   });
 
+  lastWordIs("astrid", () => {
+    window.location.href =
+      "https://www.audi.no/no/web/no/bilmodeller/audi-tron/audi-e-tron.html?gclid=CjwKCAjwjZmTBhB4EiwAynRmD1B5Ow2NfaPE_JTmEat0SiJloPvQtpbzXyNN1KD6y1RNDQedUuRdFhoCWEcQAvD_BwE&gclsrc=aw.ds";
+  });
+
   lastWordIs("kenneth", () => {
     alert("Romerikets store sønn");
   });
