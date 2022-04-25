@@ -1,7 +1,8 @@
 let lastText = "";
 
 const lastWordIs = (word: string, callback: () => void) => {
-  if (lastText.includes(word)) {
+  const _w = word.toLowerCase();
+  if (lastText.includes(_w)) {
     lastText = "";
     callback();
   }
