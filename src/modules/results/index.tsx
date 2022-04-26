@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import G3TextModule from "../../components/G3textModule";
-import Header from "../../components/Header";
-import Paragraph from "../../components/Paragrah";
-import Image from "../../components/Image";
 import gray from "../../assets/gray.png";
 import hsl from "../../assets/HLS.png";
 import crosswalk from "../../assets/crosswalk_detection.png";
