@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import G3TextModule from "../../components/G3textModule";
 import Header from "../../components/Header";
 import Paragraph from "../../components/Paragrah";
@@ -11,12 +11,57 @@ import rectangles from "../../assets/withrectangles.png";
 import result from "./../../assets/result.png";
 import styles from "./index.module.css";
 
+const ResultLink: React.FC = () => {
+  return (
+    <div>
+      <div className={styles.resultWrapper}>
+        <h2>Det endelige resutlatet ser da slik ut:</h2>
+        <img className={styles.result} src={result} alt={"final result"} />
+      </div>
+      <p>
+        <a href="https://www.google.com/maps/place/58%C2%B033'02.1%22N+7%C2%B046'07.8%22E/@58.5505899,7.7682583,136m/data=!3m1!1e3!4m5!3m4!1s0x0:0xfeea71b5f77842a2!8m2!3d58.5505804!4d7.7688321">
+          Vis fotgjengerfelt på kart
+        </a>
+        , avrunding av koordinatene skjer under generering av google link og vil
+        ikke vise helt korrekt resultat.
+      </p>
+    </div>
+  );
+};
+
 const SmallImg: React.FC<{ img: any }> = ({ img }) => {
   return <img className={styles.smallImg} src={img} alt={"something"} />;
 };
 
 const InteractiveData: React.FC = () => {
-  return <div>Ikke implementert</div>;
+  const [imgIndex, setImgIndex] = useState<number>(0);
+
+  const imgArr = [crosswalk, hsl, masked, rectangles];
+
+  return (
+    <div className={styles.interactiveImageWrapper}>
+      <h2>
+        Velkommen til våre interaktive resultater. Trykk deg gjennom
+        bildeprosessen!!
+      </h2>
+      <div style={{ textAlign: "center" }}>
+        <button onClick={() => setImgIndex((prev: number) => (prev += 1))}>
+          {imgIndex % imgArr.length === imgArr.length - 1
+            ? "Start på nytt"
+            : "Neste bilde!"}
+        </button>
+      </div>
+      <p></p>
+
+      <img
+        className={styles.interactiveImage}
+        src={imgArr[imgIndex % imgArr.length]}
+        alt={"Alt"}
+      />
+
+      <ResultLink />
+    </div>
+  );
 };
 
 const NonInteractiveData: React.FC = () => {
@@ -36,26 +81,7 @@ const NonInteractiveData: React.FC = () => {
         <SmallImg img={rectangles} />
       </div>
 
-      <div className={styles.resultWrapper}>
-        <h2>Det endelige resutlatet ser da slik ut:</h2>
-        <img className={styles.result} src={result} alt={"final result"} />
-      </div>
-
-      <p>
-        <b>
-          (Disclaimer: Vi fikk ikke google linken til å ha samme nøyaktighet som
-          dataen vår dessverre)
-        </b>
-      </p>
-      <p>
-        <b>
-          (DISCLAIMER: Vi fant ingen fotgjengerfelt i datasettet så vi har laget
-          et fake et. Men posisjonen er helt korrekt)
-        </b>
-      </p>
-      <a href="https://www.google.com/maps/place/58%C2%B033'02.1%22N+7%C2%B046'07.8%22E/@58.5505899,7.7682583,136m/data=!3m1!1e3!4m5!3m4!1s0x0:0xfeea71b5f77842a2!8m2!3d58.5505804!4d7.7688321">
-        Vis fotgjengerfelt på kart
-      </a>
+      <ResultLink />
     </>
   );
 };
@@ -71,7 +97,7 @@ const ResultsData: React.FC<{ isInteractive: boolean }> = ({
 };
 
 const Results: React.FC = () => {
-  const isInteractive = false;
+  const isInteractive = window.location.search.includes("interactive");
 
   return (
     <G3TextModule header={"Resultater"} skin={"blue"}>

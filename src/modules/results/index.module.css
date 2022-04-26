@@ -14,3 +14,14 @@
 .result {
     width: 100%;
 }
+
+.interactiveImageWrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.interactiveImage {
+    max-width: 100%;
+    max-height: 200px;
+    margin: auto;
+}
