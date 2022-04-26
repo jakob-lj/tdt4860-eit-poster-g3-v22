@@ -29,7 +29,7 @@ const Methods: React.FC = () => {
         </p>
         <p>
           Etter å ha opprettet en maske hvor vi binært har "her er det lyst
-          objekt" og "her er det mørtk" kan vi deretter enkelt gjøre mønster
+          objekt" og "her er det mørkt" kan vi deretter enkelt gjøre mønster
           gjennkjenning på en mye lettere datastruktur. Dette øker hastigheten i
           algorimene da vi har preprossesert bildet mye.
         </p>
