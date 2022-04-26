@@ -1,0 +1,16 @@
+.smallImg {
+    max-width: 20%;
+}
+
+.imagesWrapper {
+    display: flex;
+    width: 100%;
+}
+
+.resultWrapper {
+    margin-top: 2em;
+}
+
+.result {
+    width: 100%;
+}
