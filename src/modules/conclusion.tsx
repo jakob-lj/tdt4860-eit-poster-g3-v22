@@ -10,7 +10,7 @@ const Conclusion: React.FC = () => {
       <>
         <Header>Overraskende bra!</Header>
         <Paragraph>
-          Vi syens resutlatet av deteksjonen ble overraskende bra! Det ble ikke
+          Vi synes resutlatet av deteksjonen ble overraskende bra! Det ble ikke
           brukt mange timer med justering av algoritmene før god deteksjon var
           på plass. Videre ser vi for oss at man enkelt kan trene et datasett
           ved hjelp av algortimene til å detektere hvor vegmarkering er slitt,
