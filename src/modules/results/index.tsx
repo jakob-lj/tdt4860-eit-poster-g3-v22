@@ -74,7 +74,7 @@ const Results: React.FC = () => {
   const isInteractive = false;
 
   return (
-    <G3TextModule header={"Results"} skin={"blue"}>
+    <G3TextModule header={"Resultater"} skin={"blue"}>
       <>
         <ResultsData isInteractive={isInteractive} />
       </>
