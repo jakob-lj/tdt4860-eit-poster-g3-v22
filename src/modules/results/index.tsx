@@ -29,8 +29,16 @@ const ResultLink: React.FC = () => {
   );
 };
 
-const SmallImg: React.FC<{ img: any }> = ({ img }) => {
-  return <img className={styles.smallImg} src={img} alt={"something"} />;
+const SmallImg: React.FC<{ img: any; imgText: string }> = ({
+  img,
+  imgText,
+}) => {
+  return (
+    <div className={styles.smallImg}>
+      <img className={""} src={img} alt={"something"} />
+      <p>{imgText}</p>
+    </div>
+  );
 };
 
 const InteractiveData: React.FC = () => {
@@ -74,11 +82,14 @@ const NonInteractiveData: React.FC = () => {
         </h2>
       </div>
       <div className={styles.imagesWrapper}>
-        <SmallImg img={crosswalk} />
-        <SmallImg img={hsl} />
-        <SmallImg img={gray} />
-        <SmallImg img={masked} />
-        <SmallImg img={rectangles} />
+        <SmallImg img={crosswalk} imgText="Original - bilde 1" />
+        <SmallImg img={hsl} imgText={"HSL - bilde 2"} />
+        <SmallImg img={gray} imgText={"Gråskala - bilde 3"} />
+        <SmallImg img={masked} imgText={"Masket - bilde 4"} />
+        <SmallImg
+          img={rectangles}
+          imgText={"Markert med rektangler - bilde 5"}
+        />
       </div>
 
       <ResultLink />

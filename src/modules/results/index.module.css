@@ -1,10 +1,17 @@
 .smallImg {
-    max-width: 20%;
+    max-width: 25%;
+}
+
+.smallImg img {
+    width: 100%;
+    overflow: hidden;
+    height: 190px;
 }
 
 .imagesWrapper {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .resultWrapper {
